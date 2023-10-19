@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Йокогама:суши-бар</title>
+	<link href="styles/3.2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+	<h1>Суши-бар<em>&laquo;;Йокогама&raquo;</em.</h1>
+	<p><img src="доп мат/images/Суши3.jpg"></p>
+</header>
+<main>
+    <h2>Заказ еды на вынос</h2>
+    <form action="malito:order@yokogama.ru" method="post" enctype="text/plain">
+        <p><label for="dishes">Что желаете заказать?</label><br>
+        <select name="dishes" id="dishes" size="6" multiple> 
+     <optgroup label="Горячие блюда">
+     <option value="dec">Фузилли с кальмаром</option>
+     <option value="jan">Том Ям</option>
+     <option value="feb">Гёдза</option>
+     </optgroup>
+     <optgroup label="Суши">
+     <option value="mar">Суши с копченным лососем</option>
+     <option value="apr">Суши с королевской креветкой</option>
+     <option value="may">Суши с угрем</option>
+      <option value="mar">Инь-Янь</option>
+     <option value="apr">Суши с икрой</option>
+     <option value="may">Нигири с лососем</option>
+     </optgroup>
+     <optgroup label="Роллы">
+     <option value="mar">Филадельфия</option>
+     <option value="apr">Темпура</option>
+     <option value="may">Осака</option>
+     </optgroup>
+      <optgroup label="Напитки">
+     <option value="dec">Лимонад</option>
+     <option value="jan">Сок яблочный</option>
+     <option value="feb">Кола</option>
+     </optgroup>
+    <optgroup label="Закуска">
+     <option value="dec">Фисташки</option>
+     <option value="jan">Чипсы со вкусом сметаны и лука</option>
+     <option value="feb">Чипсы со вкусом краба</option>
+     </optgroup>
+    </select>
+      <p>Выберите на сколько Вам понравились наши блюда?<br>
+          <input type="range" min="1" max="10" value="8"></p>
+      <fieldset>
+          <legend>Имя и фамилия</legend>
+          <p>Имя<br><input type="text" name="name1"></p>
+          <p>Фамилия<br><input type="text" name="name2"></p>
+    </form>
+</main>
+
+<footer>
+<p class="greeting">Ждем Вас!</p>
+	<address>Наш адрес: ул. Мельникайте, 70.</address>
+	<p>&copy;студенты кафедры&laquo;бизнес-информатики и математики&raquo;.<br>
+Все права защищены.</p>
+</footer>
+</body>
+</html>
